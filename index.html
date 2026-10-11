@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariam Dosmagulova | Portfolio</title>
+  <meta name="description" content="Portfolio of Mariam Dosmagulova, 3rd-year IT Management student at KBTU.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#about" class="logo">Mariam D.</a>
+
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme">
+        Dark mode
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <img src="photo.jpg" alt="Portrait of Mariam Dosmagulova" class="about-photo" width="240" height="240">
+
+        <div class="about-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Mariam Dosmagulova</h1>
+          <p class="lead">
+            3rd-year IT Management student at Kazakh-British Technical University (KBTU) in Almaty.
+          </p>
+          <p>
+            I study how technology and business work together, and I want to build my career in IT management.
+            In this course I am learning web development step by step, from plain HTML and CSS to React and TypeScript,
+            so that I understand the products my future teams will build.
+          </p>
+
+          <h2 class="skills-title">My skills</h2>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>Power BI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">Weekly builds from the Web Application Development course.</p>
+
+        <div class="projects-grid">
+          <article class="card">
+            <p class="card-tag">Week 1</p>
+            <h3>Dev environment and HTML template</h3>
+            <p>Set up my development environment with VS Code, Git and GitHub, and built my first HTML page template.</p>
+            <a href="https://github.com/MariamDosmagulova/iwamad-practice/pull/1" class="card-link" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Week 2</p>
+            <h3>Profile Card</h3>
+            <p>A personal profile card made with HTML and CSS, where I practised layout, spacing and styling.</p>
+            <a href="https://github.com/MariamDosmagulova/iwamad-practice/pull/2" class="card-link" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Week 3</p>
+            <h3>React + TypeScript profile card</h3>
+            <p>Rebuilt the profile card as a React component written in TypeScript, using props and typed data.</p>
+            <a href="https://github.com/MariamDosmagulova/iwamad-practice/pull/3" class="card-link" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Week 4</p>
+            <h3>Routing, shared state and first test</h3>
+            <p>A multi-page React app with routing and state shared between pages, plus my first automated test.</p>
+            <a href="https://github.com/MariamDosmagulova/iwamad-practice/pull/4" class="card-link" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>Want to work together or have a question? Send me a message or reach me directly.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:dosmagulovam33@gmail.com">dosmagulovam33@gmail.com</a></li>
+            <li><a href="https://github.com/MariamDosmagulova" target="_blank" rel="noopener">github.com/MariamDosmagulova</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn">Send message</button>
+          <p class="success" id="form-success" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Mariam Dosmagulova.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
